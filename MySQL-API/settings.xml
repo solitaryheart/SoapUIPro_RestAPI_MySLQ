@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="b3accf7a-a690-459e-a4e2-bcdc3d0ab5e0" wadlVersion="http://wadl.dev.java.net/2009/02" name="MySQL-API" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b3accf7a-a690-459e-a4e2-bcdc3d0ab5e0fileName">MySQL-API</con:setting></con:settings><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8899/mysql</con:endpoint></con:endpoints></con:interface>
