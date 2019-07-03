@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="752aa392-e622-447e-b361-a48401cc9a15" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC JsonPath_2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="752aa392-e622-447e-b361-a48401cc9a15fileName">TC-JsonPath_2</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Query_Customers - query_customers_request" id="1645a4a0-7b11-40c4-a71b-65d52a3a0b4a"><con:settings/><con:config service="MySQL-API" resourcePath="/customers" methodName="Query_Customers" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Query_Customers - query_customers_request" id="0949580c-45d3-4a6f-b3cc-757e21a17e16" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8899/mysql</con:endpoint><con:request/><con:originalUri>http://localhost/mysql/customers</con:originalUri><con:assertion type="JsonPath Count" id="a0363213-1697-4cea-a660-6c035e037d17" name="JSONPath Count - Count of all Customers"><con:configuration><path>$[*]['customerID']</path><content>4</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="8f64791d-0622-4de2-8a5c-764c0816bd03" name="JSONPath Match - check first_name = larissa"><con:configuration><path>$[3]['firstName']</path><content>larissa</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="MessageContentAssertion" id="51186c41-6118-460e-9820-4e94b591a23d" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:originalMessage><![CDATA[<Response>
+   <e>
+      <customerID>cust2614105</customerID>
+      <firstName>larissa2</firstName>
+      <lastName>feierabend</lastName>
+      <phone>2238</phone>
+      <email>mm8@kps.com</email>
+      <address>Badway</address>
+      <city>Dortmund</city>
+      <state>NRW</state>
+      <zipcode>44369</zipcode>
+      <country>England</country>
+      <creationDate>Mai 10, 2019</creationDate>
+   </e>
+   <e>
+      <customerID>cust3244213</customerID>
+      <firstName>larissa</firstName>
+      <lastName>feierabend</lastName>
+      <phone>2237</phone>
+      <email>mm7@kps.com</email>
+      <address>Badway</address>
+      <city>Dortmund</city>
+      <state>NRW</state>
+      <zipcode>44369</zipcode>
+      <country>England</country>
+      <creationDate>Mai 6, 2019</creationDate>
+   </e>
+   <e>
+      <customerID>cust4744400</customerID>
+      <firstName>larissa3</firstName>
+      <lastName>feierabend</lastName>
+      <phone>2239</phone>
+      <email>mm9@kps.com</email>
+      <address>Badway</address>
+      <city>Dortmund</city>
+      <state>NRW</state>
+      <zipcode>44369</zipcode>
+      <country>England</country>
+      <creationDate>Mai 10, 2019</creationDate>
+   </e>
+   <e>
+      <customerID>cust6776656</customerID>
+      <firstName>larissa</firstName>
+      <lastName>kaefer</lastName>
+      <phone>1237</phone>
+      <email>mm5@kps.com</email>
+      <address>Badway</address>
+      <city>Dortmund</city>
+      <state>NRW</state>
+      <zipcode>44369</zipcode>
+      <country>England</country>
+      <creationDate>Mai 6, 2019</creationDate>
+   </e>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="firstName" value="larissa"/>
+  <con:entry key="state" value=""/>
+</con:parameters><con:parameterOrder><con:entry>firstName</con:entry><con:entry>lastName</con:entry><con:entry>phone</con:entry><con:entry>email</con:entry><con:entry>city</con:entry><con:entry>zipcode</con:entry><con:entry>country</con:entry><con:entry>state</con:entry></con:parameterOrder><con:environmentSpec><con:entry environmentId="421f8022-d901-4254-911c-22d53bdd6dc5"><con:authProfile>No Authorization</con:authProfile></con:entry><con:entry environmentId="f92fb82c-c4d5-4a5f-9060-43a778a9c83d"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
